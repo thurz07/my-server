@@ -12,4 +12,195 @@
     <p>Disciplina: Administração de Sistemas Proprietários</p>
     <p>Tema: HTTP</p>
 </body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afogados da Ingazeira Futebol Clube</title>
+    <style>
+        /* Estilos Globais e Fontes */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --vermelho: #e60000;
+            --azul-escuro: #0a192f;
+            --azul-principal: #0044ff;
+            --branco: #ffffff;
+            --cinza-claro: #f4f6f9;
+        }
+
+        body {
+            background-color: var(--cinza-claro);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho / Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--azul-escuro) 0%, var(--azul-principal) 50%, var(--vermelho) 100%);
+            color: var(--branco);
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--vermelho);
+            color: var(--branco);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Layout Conteúdo */
+        .container {
+            max-width: 1000px;
+            margin: -30px auto 40px auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Cartões de Conteúdo */
+        .card {
+            background: var(--branco);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--vermelho);
+        }
+
+        .card h2 {
+            color: var(--azul-escuro);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 20px;
+            background-color: var(--vermelho);
+            border-radius: 2px;
+        }
+
+        /* Grid de Informações do Aluno */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .info-item {
+            background-color: var(--cinza-claro);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid var(--azul-principal);
+        }
+
+        .info-item label {
+            display: block;
+            font-size: 0.85rem;
+            color: #666;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .info-item span {
+            font-size: 1.1rem;
+            color: var(--azul-escuro);
+            font-weight: 600;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            font-size: 0.9rem;
+        }
+
+        footer strong {
+            color: var(--vermelho);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Afogados da Ingazeira F.C.</h1>
+        <p>A Coruja do Sertão • Orgulho de Pernambuco</p>
+        <div class="badge">Projeto Acadêmico</div>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2>Identificação do Projeto</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <label>Aluno</label>
+                    <span>SEU NOME</span>
+                </div>
+                <div class="info-item">
+                    <label>Disciplina</label>
+                    <span>Administração de Sistemas Proprietários</span>
+                </div>
+                <div class="info-item">
+                    <label>Tema</label>
+                    <span>Protocolo HTTP</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Sobre o Clube</h2>
+            <p>Fundado em 2013, o <strong>Afogados da Ingazeira Futebol Clube</strong> representa a força do futebol no Sertão pernambucano. Conhecido carinhosamente como a <em>Coruja do Sertão</em>, o clube se destaca pela sua torcida apaixonada e por fazer história no estádio Vianão.</p>
+        </div>
+
+        <div class="card">
+            <h2>Integração: Servidor Web & HTTP</h2>
+            <p>Este site é servido através do protocolo <strong>HTTP (Hypertext Transfer Protocol)</strong>. Em um ambiente de Administração de Sistemas, configurar corretamente o servidor web para responder às requisições do cliente é essencial para garantir alta performance, segurança e disponibilidade das informações do clube.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Projeto desenvolvido para a disciplina de <strong>Administração de Sistemas Proprietários</strong>.</p>
+    </footer>
+
+</body>
 </html>
