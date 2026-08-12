@@ -3,20 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Projeto</title>
-</head>
-<body>
-    <h1>Meu Projeto da Disciplina</h1>
-
-    <p>Aluno: SEU NOME</p>
-    <p>Disciplina: Administração de Sistemas Proprietários</p>
-    <p>Tema: HTTP</p>
-</body>
-</html><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afogados da Ingazeira Futebol Clube</title>
     <style>
         /* Estilos Globais e Fontes */
@@ -144,6 +130,44 @@
             font-weight: 600;
         }
 
+        /* Estilos das Galerias */
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .galeria-item {
+            background: var(--cinza-claro);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .galeria-item p {
+            padding: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--azul-escuro);
+            background: #fff;
+            border-top: 2px solid var(--azul-principal);
+        }
+
         /* Rodapé */
         footer {
             text-align: center;
@@ -161,8 +185,8 @@
 <body>
 
     <header>
-        <img src="images/aifc.gif" alt="">
-        <h1>Afogados da Ingazeira F.C.</h1>
+        <img src="images/aifc.gif" alt="Escudo Afogados FC">
+        <h1>Afogados da Ingazeira F.C</h1>
         <p>A Coruja do Sertão • Orgulho de Pernambuco</p>
         <div class="badge">Projeto Acadêmico</div>
     </header>
@@ -190,6 +214,50 @@
         <div class="card">
             <h2>Sobre o Clube</h2>
             <p>Fundado em 2013, o <strong>Afogados da Ingazeira Futebol Clube</strong> representa a força do futebol no Sertão pernambucano. Conhecido carinhosamente como a <em>Coruja do Sertão</em>, o clube se destaca pela sua torcida apaixonada e por fazer história no estádio Vianão.</p>
+        </div>
+
+        <div class="card">
+            <h2>Título Série A2 Pernambucano 2023</h2>
+            <p>Em 2023, a Coruja do Sertão conquistou o tão sonhado título da Série A2 do Campeonato Pernambucano, garantindo o retorno em grande estilo à elite do futebol estadual.</p>
+            
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="images/TITULOA2.WEBP" alt="Elenco do Afogados levantando a taça de campeão 2023">
+                    <p>Elenco Levantando a Taça</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="images/INVASAO.jpg" alt="Invasão da torcida no campo após o título">
+                    <p>Festa e Invasão da Torcida no Campo</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="images/ARTTITI.WEBP" alt="Arte Oficial de Campeão Pernambucano A2 2023">
+                    <p>Arte Oficial de Campeão 2023</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>O Histórico 'Zebraço' na Copa do Brasil (2020)</h2>
+            <p>Um dos episódios mais marcantes do futebol brasileiro! O Afogados eliminou o Atlético-MG nos pênaltis no estádio Vianão, eternizando o goleiro Wallef (o "Goleiro de Boné") e parando a cidade de Afogados da Ingazeira.</p>
+            
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="images/WALLEF.jpg" alt="Goleiro Wallef de boné comemorando a defesa de pênalti">
+                    <p>Wallef: O Herói de Boné na Defesa do Pênalti</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="images/ELEN.WEBP" alt="Elenco do Afogados comemorando no vestiário">
+                    <p>Festa Histórica no Vestiário do Vianão</p>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="images/CARNA.WEBP" alt="Torcida do Afogados fazendo festa nas ruas">
+                    <p>O 'Carnaval da Coruja' nas Ruas da Cidade</p>
+                </div>
+            </div>
         </div>
 
         <div class="card">
